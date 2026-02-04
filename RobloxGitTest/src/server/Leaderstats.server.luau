@@ -18,7 +18,7 @@ game.Players.PlayerAdded:Connect(function(player)
     player.SetAttribute("Multiplier", 1)
 
 if player:GetAttribute("X2Dinero") == true then
-    player:SetAttribute("Multiplier", 2)
+    player:SetAttribute("Multiplier", player:GetAttribute("Multiplier") * 2)
 end
 
 end)
